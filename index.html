@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baral Biddya Niketan - Students Projects & Games Portal</title>
+  <meta name="description" content="Explore portfolio websites and 2D web games developed by students of Baral Biddya Niketan (Boral Biddya Niketon).">
+  <meta name="keywords" content="Baral Biddya Niketan, Boral Biddya Niketon, student portfolios, kids coding, GDevelop games, Md. Rahamat Ulla, Mehedi Hassan Akash, Muradul Islam Musa, Sadnan Islam, MD Shamiul Islam, MD Sibgatul Islame, Md Sowrov Islam, Mst Maya Khatun, Md. Rafid Hossen, Simanto Islam">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://baralbiddyaniketan.github.io/">
+  <meta name="google-site-verification" content="google2bafa1a27323c796">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Baral Biddya Niketan - Student Projects & Games">
+  <meta property="og:description" content="Explore web portfolios and games created by students of Baral Biddya Niketan.">
+  <meta property="og:url" content="https://baralbiddyaniketan.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Baral Biddya Niketan",
+    "alternateName": "Boral Biddya Niketon",
+    "url": "https://baralbiddyaniketan.github.io/",
+    "description": "Student web project directory and game showcase for Baral Biddya Niketan.",
+    "hasPart": [
+      {
+        "@type": "ProfilePage",
+        "name": "Md. Rahamat Ulla Portfolio",
+        "url": "https://baralbiddyaniketan.github.io/md-rahamat-ulla.github.io/"
+      },
+      {
+        "@type": "ProfilePage",
+        "name": "Mehedi Hassan Akash Portfolio",
+        "url": "https://baralbiddyaniketan.github.io/mehedi-hassan-akash.github.io/"
+      },
+      {
+        "@type": "ProfilePage",
+        "name": "Muradul Islam Musa Portfolio",
+        "url": "https://baralbiddyaniketan.github.io/muradul-islam-musa.github.io/"
+      },
+      {
+        "@type": "ProfilePage",
+        "name": "Sadnan Islam Portfolio",
+        "url": "https://baralbiddyaniketan.github.io/sadnan-islam.github.io/"
+      },
+      {
+        "@type": "ProfilePage",
+        "name": "MD Shamiul Islam Portfolio",
+        "url": "https://baralbiddyaniketan.github.io/shamiul-islam.github.io/"
+      },
+      {
+        "@type": "ProfilePage",
+        "name": "MD Sibgatul Islame Portfolio",
+        "url": "https://baralbiddyaniketan.github.io/sibgatul-islam.github.io/"
+      },
+      {
+        "@type": "ProfilePage",
+        "name": "Md Sowrov Islam Portfolio",
+        "url": "https://baralbiddyaniketan.github.io/sowrov-islam.github.io/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Mst Maya Khatun Game",
+        "url": "https://baralbiddyaniketan.github.io/mst-maya-khatun.github.io/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Md. Rafid Hossen Game",
+        "url": "https://baralbiddyaniketan.github.io/md-rafid-hossen.github.io/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Simanto Islam Game",
+        "url": "https://baralbiddyaniketan.github.io/simanto-islam.github.io/"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+    p.lead {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #60a5fa;
+      box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.15);
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      color: #f8fafc;
+      margin-bottom: 16px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: auto;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+    .btn-secondary {
+      background: #334155;
+      color: #cbd5e1;
+      border: 1px solid #475569;
+    }
+    .btn-secondary:hover {
+      background: #475569;
+      color: #ffffff;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #1e293b;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Baral Biddya Niketan</h1>
+      <p class="lead">Official Student Portfolios & Game Directory</p>
+    </header>
+
+    <div class="grid">
+      <!-- Md. Rahamat Ulla -->
+      <div class="card">
+        <h2>Md. Rahamat Ulla</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/md-rahamat-ulla.github.io/">Portfolio</a>
+          <a class="btn btn-secondary" href="https://baralbiddyaniketan.github.io/md-rahamat-ulla.github.io/game/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- Mehedi Hassan Akash -->
+      <div class="card">
+        <h2>Mehedi Hassan Akash</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/mehedi-hassan-akash.github.io/">Portfolio</a>
+          <a class="btn btn-secondary" href="https://baralbiddyaniketan.github.io/mehedi-hassan-akash.github.io/game/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- Muradul Islam Musa -->
+      <div class="card">
+        <h2>Muradul Islam Musa</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/muradul-islam-musa.github.io/">Portfolio</a>
+          <a class="btn btn-secondary" href="https://baralbiddyaniketan.github.io/muradul-islam-musa.github.io/game/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- Sadnan Islam -->
+      <div class="card">
+        <h2>Sadnan Islam</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/sadnan-islam.github.io/">Portfolio</a>
+          <a class="btn btn-secondary" href="https://baralbiddyaniketan.github.io/sadnan-islam.github.io/game/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- MD Shamiul Islam -->
+      <div class="card">
+        <h2>MD Shamiul Islam</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/shamiul-islam.github.io/">Portfolio</a>
+          <a class="btn btn-secondary" href="https://baralbiddyaniketan.github.io/shamiul-islam.github.io/game/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- MD Sibgatul Islame -->
+      <div class="card">
+        <h2>MD Sibgatul Islame</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/sibgatul-islam.github.io/">Portfolio</a>
+          <a class="btn btn-secondary" href="https://baralbiddyaniketan.github.io/sibgatul-islam.github.io/game/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- Md Sowrov Islam -->
+      <div class="card">
+        <h2>Md Sowrov Islam</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/sowrov-islam.github.io/">Portfolio</a>
+          <a class="btn btn-secondary" href="https://baralbiddyaniketan.github.io/sowrov-islam.github.io/game/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- Mst Maya Khatun -->
+      <div class="card">
+        <h2>Mst Maya Khatun</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/mst-maya-khatun.github.io/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- Md. Rafid Hossen -->
+      <div class="card">
+        <h2>Md. Rafid Hossen</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/md-rafid-hossen.github.io/">Play Game</a>
+        </div>
+      </div>
+
+      <!-- Simanto Islam -->
+      <div class="card">
+        <h2>Simanto Islam</h2>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://baralbiddyaniketan.github.io/simanto-islam.github.io/">Play Game</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 Baral Biddya Niketan (Boral Biddya Niketon). All student creations.
+    </footer>
+  </div>
+</body>
+</html>
